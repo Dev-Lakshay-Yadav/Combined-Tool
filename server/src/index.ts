@@ -52,14 +52,14 @@ app.use("/api", watchLocalRoutes, uploadRoutes);
 
 // File checker
 // local test
-app.get("/cases/status", async (req, res) => {
-  try {
-    const casesStatus = await splitCasesByLabToken();
-    res.json(casesStatus);
-  } catch (error) {
-    handleApiError(res, error, "checkCases");
-  }
-});
+// app.get("/cases/status", async (req, res) => {
+//   try {
+//     const casesStatus = await splitCasesByLabToken();
+//     res.json(casesStatus);
+//   } catch (error) {
+//     handleApiError(res, error, "checkCases");
+//   }
+// });
 
 // ------------------- Push Data Every 1 Minute -------------------
 // const PUSH_INTERVAL = 10 * 1000; // 1 minute
